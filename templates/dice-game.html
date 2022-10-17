@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew's Dice Game</title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+</head>
+
+<body>
+    <form action="roll" method="post">
+            <table class="game" align="center">
+                <tr class="player">
+                    <th colspan="2"><h3>The Dice Game!<br />First player to reach 20 wins.</h3></th>
+                    <th><button class="exit"><a href="/">Exit</a></button></th>
+                </tr>
+                <tr class="player">
+                    &ensp;&ensp;<td><b>Player 1:</b> 
+                        <input class="roll" type="text" size="8" name="player1" value="{{player1}}"
+                            readonly /></td>
+                    &ensp;&ensp;<td><b>Player 2:</b> 
+                        <input class="roll" type="text" size="8" name="player2" value="{{player2}}"
+                            readonly /></td>
+
+                </tr>
+                <tr>
+                    &ensp;&ensp;<td style="margin-top:0;padding-top:5px;text-align:center;">
+                        <b>Score:</b> 
+                        <input class="roll" type="text" name="p1score" size="2" value="{{p1score}}" readonly />
+                    </td>
+
+                    &ensp;&ensp;<td style="margin-top:0;padding-top:5px;text-align:center;">
+                        <b>Score:</b> 
+                        <input class="roll" type="text" name="p2score" size="2" value="{{p2score}}" readonly />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <p style="font-size:10pt;"><input class="roll player" type="text" size="8" name="player" value="{{player}}"/>'s Turn</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">&emsp;&ensp;<img title="dice" src="../static/images/Die{{dice}}.jpg" /></td>
+                </tr>
+                <tr>
+                    <td id="buttons" style="text-align:right;">
+                        &ensp;&ensp;<button class="hold" type="submit" formaction="roll">ROLL</button>
+                    </td>
+                    <td style="text-align:left;">
+                        &ensp;&ensp;<button class="hold" type="submit" formaction="hold">HOLD</button>
+                    </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+body {
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+h1, h3, h2 {
+    color: #d71f0a;
+    text-align: center;
+}
+
+table.game {
+    background-color: white;
+    box-shadow: 5px 5px black;
+    width: 50%;
+    margin-top: 50px;
+}
+
+table.game td {
+    padding: 10px;
+}
+
+table.game tr.player {
+    text-align: center;
+}
+
+table.start {
+    background-color: white;
+    box-shadow: 5px 5px black;
+}
+
+table.start td {
+    margin: 10px;
+    padding: 20px;
+}
+
+td.button{
+    text-align: center;
+}
+
+td#winner{
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
+
+input[type=submit], input[type=button] {
+    border:2px solid black;
+    background-color: #d71f0a;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px black;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+   color: black;
+   font-weight: bold;
+}
+
+input[type=submit]:active, input[type=button]:active {
+    box-shadow: none;
+}
+
+input.roll {
+    background-color: white;
+    border: none;
+
+}
+
+input.player {
+    text-align: right;
+}
+
+td#buttons {
+    text-align: center;
+}
+
+button.exit {
+    border: 2px solid #d71f0a;
+    background-color: white;
+    padding: 10px;
+}
+
+button > a {
+    color: #d71f0a;
+    font-weight: bold;
+}
+
+button > a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+button.hold {
+    border:2px solid black;
+    background-color: #d71f0a;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px black;
+}
+
+button.hold:hover {
+    color: black;
+    font-weight: bold;
+}
+
+button.hold:active {
+    box-shadow: none;
+}
+
+th {
+    font-size: 15pt;
+}
